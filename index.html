@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Úvod | Webová stránka</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.jpg" alt="Logo stránky" title="Domov"></a>
+        </div>
+        <button class="menu-toggle">☰</button>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="galeria.html">Obrázková galéria</a></li>
+                <li><a href="onas.html">O mne</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h1>Vitajte na mojej webovej stránke</h1>
+            <p class="uvod-text">Táto stránka slúži ako ukážka mojich schopností v hre Clash Royale.    </p>
+            <br>
+            
+            <div class="slider">
+                <div class="slide active">
+                    <img src="slide1.jpg" alt="screenshot1">
+                </div>
+                <div class="slide">
+                    <img src="slide2.jpg" alt="screenshot2">
+                </div>
+                <div class="slide">
+                    <img src="slide3.webp" alt="screenshot3">
+                </div>
+            </div>
+
+            <div class="tabulka">
+                <table>
+                    <caption>Študentské informácie</caption>
+                    <tr>
+                        <th>Meno</th>
+                        <th>Priezvisko</th>
+                        <th>Trieda</th>
+                    </tr>
+                    <tr>
+                        <td>Adam</td>
+                        <td>Kovaľ</td>
+                        <td>I.SA</td>
+                    </tr>
+                </table>
+            </div>   
+        </div>
+
+        <aside class="sidebar">
+            <h2>Aktuality</h2>
+            <ul>
+                <li>Nové projekty školy.</li>
+                <li>Športový deň plánovaný na máj.</li>
+                <li>Exkurzia do IT firmy budúci týždeň.</li>
+                <li>...</li>
+            </ul>
+        </aside>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Adam Kovaľ. Všetky práva vyhradené.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Galéria | Webová stránka</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.jpg" alt="Logo stránky" title="Domov"></a>
+        </div>
+        <button class="menu-toggle">☰</button>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="galeria.html">Obrázková galéria</a></li>
+                <li><a href="onas.html">O mne</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h1>Profesionálni Clash Royale hráči</h1>
+            
+            <div class="gallery-slider">
+                <div class="gallery-slide active">
+                    <img src="morten.png" alt="SK Morten" loading="lazy">
+                    <p class="menaHracov">SK Morten</p>
+                </div>
+                <div class="gallery-slide">
+                    <img src="xopxsam.png" alt="SK xopxsam" loading="lazy">
+                    <p class="menaHracov">SK xopxsam</p>
+                </div>
+                <div class="gallery-slide">
+                    <img src="ojgaming.png" alt="Orange Juice Gaming" loading="lazy">
+                    <p class="menaHracov">Orange Juice Gaming</p>
+                </div>
+                <button class="slider-prev">❮</button>
+                <button class="slider-next">❯</button>
+            </div>
+            
+            <div class="thumbnail-container">
+                <div class="thumbnail active" data-index="0">
+                    <img src="morten.png" alt="SK Morten thumbnail">
+                </div>
+                <div class="thumbnail" data-index="1">
+                    <img src="xopxsam.png" alt="SK xopxsam thumbnail">
+                </div>
+                <div class="thumbnail" data-index="2">
+                    <img src="ojgaming.png" alt="Orange Juice Gaming thumbnail">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Adam Kovaľ. Všetky práva vyhradené.</p>
+    </footer>
+</body>
+</html>

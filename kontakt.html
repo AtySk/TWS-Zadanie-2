@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="sk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kontakt | Webová stránka</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <a href="index.html"><img src="logo.jpg" alt="Logo stránky" title="Domov"></a>
+        </div>
+        <button class="menu-toggle">☰</button>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Úvod</a></li>
+                <li><a href="galeria.html">Obrázková galéria</a></li>
+                <li><a href="onas.html">O mne</a></li>
+                <li><a href="kontakt.html">Kontakt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div class="container">
+        <div class="main-content">
+            <h1>Kontaktný formulár</h1>
+            
+            <div class="form-container">
+                <form id="contactForm" action="#" method="post">
+                    <div class="form-group">
+                        <label for="meno">Meno:*</label>
+                        <input type="text" id="meno" name="meno" minlength="5" maxlength="128" required>
+                        <span class="error-message" id="meno-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email:*</label>
+                        <input type="email" id="email" name="email" maxlength="256" required>
+                        <span class="error-message" id="email-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="telefon">Telefónne číslo:</label>
+                        <input type="tel" id="telefon" name="telefon" minlength="7">
+                        <span class="error-message" id="telefon-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="predmet">Predmet:*</label>
+                        <input type="text" id="predmet" name="predmet" minlength="3" maxlength="128" required>
+                        <span class="error-message" id="predmet-error"></span>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="sprava">Text správy:*</label>
+                        <textarea id="sprava" name="sprava" minlength="5" required></textarea>
+                        <span class="error-message" id="sprava-error"></span>
+                    </div>
+                    
+                    <button type="submit">Odoslať</button>
+                </form>
+            </div>
+            
+            <div class="contact-info">
+                <h2>Kontaktné informácie</h2>
+                <p><strong>Email:</strong>priklad@gmail.com</p>
+                <p><strong>Telefón:</strong> +421 123 456 789</p>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Adam Kovaľ. Všetky práva vyhradené.</p>
+    </footer>
+</body>
+</html>
